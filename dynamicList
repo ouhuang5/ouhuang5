@@ -1,0 +1,30 @@
+import openConfig from './config/openConfig';
+import normalConfig from './config/normalConfig';
+import dynamicConfig from './config/dynamicConfig/dynamicConfig';
+
+const openList: CompletionItem[] = [
+	openConfig.fc,
+	openConfig.imr,
+]
+
+const normalList: CompletionItem[] = [
+	normalConfig.useEffect,
+	normalConfig.useEffectDth,
+	normalConfig.useState,
+	normalConfig.useRef,
+	normalConfig.csy,
+	normalConfig.img,
+]
+
+const dynamicList: CompletionItem[] = [
+	dynamicConfig.ism,
+	dynamicConfig.mfc,
+	dynamicConfig.mdp,
+	dynamicConfig.moi,
+]
+
+export {
+	openList, 
+	normalList,
+	dynamicList,
+}
